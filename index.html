@@ -1,230 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bliss Atelier by SURE BLISS — refined men's fashion, tailored with class and made in Nigeria.">
-  <title>BLISS ATELIER | By SURE BLISS</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bliss Atelier by SURE BLISS — men's fashion, tailored with class and made in Nigeria.">
+<meta name="theme-color" content="#080808">
+<title>BLISS ATELIER — By SURE BLISS</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header class="header">
-  <nav class="nav">
-    <a class="logo-link" href="#home" aria-label="Bliss Atelier home">
-      <img src="logo.jpg" alt="SURE BLISS logo">
-    </a>
-
-    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open navigation">☰</button>
-
-    <div class="nav-links" id="navLinks">
-      <a href="#home" onclick="closeMenu()">Home</a>
-      <a href="#story" onclick="closeMenu()">Our Story</a>
-      <a href="#collection" onclick="closeMenu()">Collection</a>
-      <a href="#services" onclick="closeMenu()">Services</a>
-      <a href="#contact" onclick="closeMenu()">Contact</a>
-    </div>
-  </nav>
+<nav class="nav">
+<a class="brand-mark" href="#home"><img src="logo.jpg" alt="SURE BLISS logo"><span><b>BLISS ATELIER</b><small>BY SURE BLISS</small></span></a>
+<button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+<div class="nav-links" id="navLinks"><a href="#home" onclick="closeMenu()">Home</a><a href="#story" onclick="closeMenu()">About</a><a href="#collection" onclick="closeMenu()">Collection</a><a href="#services" onclick="closeMenu()">Services</a><a href="#contact" onclick="closeMenu()">Contact</a></div>
+</nav>
 </header>
 
 <main>
-
 <section class="hero" id="home">
-  <div class="hero-image"></div>
-  <div class="hero-shade"></div>
-  <div class="hero-content">
-    <p class="kicker">BLISS ATELIER • BY SURE BLISS</p>
-    <h1>Tailoring <em>bliss</em> into every outfit.</h1>
-    <p class="hero-copy">
-      Perfect fitting for every gentleman. Tailored with class • Made in Nigeria.
-    </p>
-    <div class="actions">
-      <a class="button gold" href="#collection">View Collection</a>
-      <a class="button light" href="https://whatsapp.com/dl/" target="_blank" rel="noopener">Order on WhatsApp</a>
-    </div>
-  </div>
-  <div class="scroll-note">SCROLL TO EXPLORE ↓</div>
+<div class="hero-bg"></div><div class="hero-overlay"></div>
+<div class="hero-content reveal"><p class="eyebrow">BLISS ATELIER • BY SURE BLISS</p><h1>Perfect fitting<br><em>for every gentleman.</em></h1><p>Tailored with class • Made in Nigeria</p><div class="hero-actions"><a class="button gold" href="#collection">Explore Collection</a><a class="button outline" href="https://whatsapp.com/dl/" target="_blank" rel="noopener">Order on WhatsApp ↗</a></div></div>
+<div class="hero-bottom"><span>MEN'S FASHION</span><span>TAILORING BLISS INTO EVERY OUTFIT.</span><span>NIGERIA 🇳🇬</span></div>
 </section>
 
-<section class="marquee">
-  <span>MEN'S FASHION</span><i>✦</i>
-  <span>TAILORED WITH CLASS</span><i>✦</i>
-  <span>MADE IN NIGERIA</span><i>✦</i>
-</section>
+<section class="intro section reveal" id="story"><div class="section-tag">01 / THE HOUSE</div><div class="intro-grid"><h2>Clothes with<br><em>character.</em></h2><div><p class="lead">Bliss Atelier is the fashion identity of <strong>SURE BLISS</strong> — a men's clothing brand focused on confident silhouettes, thoughtful details and a polished fit.</p><p>Every piece is designed to bring together personal style, Nigerian craftsmanship and the feeling of stepping out in something made for you.</p><div class="signature">Tailoring bliss into every outfit.</div></div></div></section>
 
-<section class="section story" id="story">
-  <div class="section-label">01 — OUR STORY</div>
-  <div class="story-grid">
-    <div>
-      <h2>Where <span>craft</span> meets character.</h2>
-    </div>
-    <div class="story-copy">
-      <p>
-        <strong>Bliss Atelier</strong> is the fashion identity of <strong>SURE BLISS</strong>,
-        created for gentlemen who want their clothing to feel personal, polished and confident.
-      </p>
-      <p>
-        From traditional-inspired pieces to contemporary looks, each design is made
-        with attention to detail, fit and finishing.
-      </p>
-      <p class="signature">Tailoring bliss into every outfit.</p>
-    </div>
-  </div>
-</section>
+<section class="collection section" id="collection"><div class="section-head reveal"><div><div class="section-tag">02 / THE COLLECTION</div><h2>Selected <em>looks.</em></h2></div><p>Eight looks from the SURE BLISS design collection.</p></div>
+<div class="gallery">
+<button class="card tall reveal" onclick="openLightbox(0)"><img src="look-1.jpg" alt="Classic white men's outfit"><span>01 / CLASSIC WHITE</span></button>
+<button class="card reveal" onclick="openLightbox(1)"><img src="look-2.jpg" alt="Pink men's design"><span>02 / SIGNATURE DETAIL</span></button>
+<button class="card reveal" onclick="openLightbox(2)"><img src="look-3.jpg" alt="Green men's design"><span>03 / MODERN GREEN</span></button>
+<button class="card wide reveal" onclick="openLightbox(3)"><img src="look-4.jpg" alt="Brown striped men's design"><span>04 / BROWN STRIPE</span></button>
+<button class="card reveal" onclick="openLightbox(4)"><img src="look-5.jpg" alt="Cream men's design"><span>05 / HERITAGE CREAM</span></button>
+<button class="card tall reveal" onclick="openLightbox(5)"><img src="look-6.jpg" alt="Brown embroidered men's design"><span>06 / EMBROIDERED BROWN</span></button>
+<button class="card reveal" onclick="openLightbox(6)"><img src="look-7.jpg" alt="Peach men's design"><span>07 / SOFT PEACH</span></button>
+<button class="card reveal" onclick="openLightbox(7)"><img src="look-8.jpg" alt="White men's two-piece design"><span>08 / TIMELESS WHITE</span></button>
+</div></section>
 
-<section class="section collection" id="collection">
-  <div class="section-heading">
-    <div>
-      <div class="section-label">02 — THE COLLECTION</div>
-      <h2>Selected designs</h2>
-    </div>
-    <p>Explore some of the work from the SURE BLISS collection.</p>
-  </div>
+<section class="services section reveal" id="services"><div class="section-tag">03 / SERVICES</div><h2>Made around <em>you.</em></h2><div class="service-grid"><article><b>01</b><h3>Custom Tailoring</h3><p>Personalised pieces shaped around the gentleman's preferred style and fit.</p></article><article><b>02</b><h3>Traditional Wear</h3><p>Nigerian-inspired designs with contemporary finishing and attention to detail.</p></article><article><b>03</b><h3>Signature Pieces</h3><p>Distinctive details, patterns and finishing touches for a memorable look.</p></article></div></section>
 
-  <div class="gallery">
-    <figure class="gallery-item item-large">
-      <img src="look-1.jpg" alt="White traditional-inspired men's outfit">
-      <figcaption><span>01</span> Classic White</figcaption>
-    </figure>
+<section class="cta reveal"><div><p class="eyebrow">READY FOR YOUR NEXT LOOK?</p><h2>Let's tailor something<br><em>special.</em></h2></div><a class="button gold" href="https://whatsapp.com/dl/" target="_blank" rel="noopener">Start an Order ↗</a></section>
 
-    <figure class="gallery-item">
-      <img src="look-2.jpg" alt="Pink men's garment with patterned detailing">
-      <figcaption><span>02</span> Signature Detail</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="look-3.jpg" alt="Green men's outfit with contrasting detail">
-      <figcaption><span>03</span> Modern Green</figcaption>
-    </figure>
-
-    <figure class="gallery-item item-wide">
-      <img src="look-4.jpg" alt="Brown striped men's tunic">
-      <figcaption><span>04</span> Brown Stripe</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="look-5.jpg" alt="Cream men's traditional-inspired outfit">
-      <figcaption><span>05</span> Heritage Cream</figcaption>
-    </figure>
-
-    <figure class="gallery-item item-large">
-      <img src="look-6.jpg" alt="Brown embroidered men's outfit">
-      <figcaption><span>06</span> Embroidered Brown</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="look-7.jpg" alt="Peach men's outfit on a mannequin">
-      <figcaption><span>07</span> Soft Peach</figcaption>
-    </figure>
-
-    <figure class="gallery-item">
-      <img src="look-8.jpg" alt="White men's two-piece outfit">
-      <figcaption><span>08</span> Timeless White</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section class="section services" id="services">
-  <div class="section-label">03 — WHAT WE DO</div>
-  <h2>Designed around <span>you.</span></h2>
-
-  <div class="service-grid">
-    <article>
-      <div class="service-number">01</div>
-      <h3>Custom Tailoring</h3>
-      <p>Outfits created with the gentleman's style, occasion and fit in mind.</p>
-    </article>
-
-    <article>
-      <div class="service-number">02</div>
-      <h3>Traditional Styles</h3>
-      <p>Distinctive Nigerian-inspired looks with clean, contemporary finishing.</p>
-    </article>
-
-    <article>
-      <div class="service-number">03</div>
-      <h3>Signature Details</h3>
-      <p>Patterns, trims and finishing touches that make an outfit stand out.</p>
-    </article>
-  </div>
-</section>
-
-<section class="statement">
-  <div class="statement-inner">
-    <p class="kicker">SURE BLISS</p>
-    <h2>Perfect fitting<br><em>for every gentleman.</em></h2>
-    <a class="button gold" href="https://whatsapp.com/dl/" target="_blank" rel="noopener">Start an Order</a>
-  </div>
-</section>
-
-<section class="section contact" id="contact">
-  <div class="section-label">04 — GET IN TOUCH</div>
-  <div class="contact-grid">
-    <div>
-      <h2>Let's create your <span>next look.</span></h2>
-      <p class="contact-intro">
-        Ready to discuss an outfit? Reach SURE BLISS through WhatsApp, email or TikTok.
-      </p>
-    </div>
-
-    <div class="contact-list">
-      <a class="contact-card" href="https://whatsapp.com/dl/" target="_blank" rel="noopener">
-        <small>ORDER</small>
-        <strong>WhatsApp ↗</strong>
-        <span>Tap to contact SURE BLISS</span>
-      </a>
-
-      <a class="contact-card" href="mailto:ayomideadam181@gmail.com">
-        <small>EMAIL</small>
-        <strong>ayomideadam181@gmail.com</strong>
-        <span>Send an email</span>
-      </a>
-
-      <a class="contact-card" href="https://www.tiktok.com/@sureblissfashion" target="_blank" rel="noopener">
-        <small>TIKTOK</small>
-        <strong>@sureblissfashion ↗</strong>
-        <span>Follow the latest styles</span>
-      </a>
-
-      <div class="contact-card static">
-        <small>LOCATION</small>
-        <strong>Nigeria 🇳🇬</strong>
-        <span>Made in Nigeria</span>
-      </div>
-    </div>
-  </div>
-</section>
-
+<section class="contact section reveal" id="contact"><div class="section-tag">04 / CONTACT</div><div class="contact-grid"><div><h2>Let's create your<br><em>next look.</em></h2><p>For orders and enquiries, connect with SURE BLISS through the channels below.</p></div><div class="contacts"><a href="https://whatsapp.com/dl/" target="_blank" rel="noopener"><small>ORDER</small><strong>WhatsApp ↗</strong><span>Contact SURE BLISS</span></a><a href="mailto:ayomideadam181@gmail.com"><small>EMAIL</small><strong>ayomideadam181@gmail.com</strong><span>Send an email</span></a><a href="https://www.tiktok.com/@sureblissfashion" target="_blank" rel="noopener"><small>TIKTOK</small><strong>@sureblissfashion ↗</strong><span>Follow the latest styles</span></a><div><small>LOCATION</small><strong>Nigeria 🇳🇬</strong><span>Made in Nigeria</span></div></div></div></section>
 </main>
 
-<footer class="footer">
-  <div class="footer-brand">
-    <img src="logo.jpg" alt="SURE BLISS logo">
-    <div>
-      <strong>BLISS ATELIER</strong>
-      <span>BY SURE BLISS</span>
-    </div>
-  </div>
+<footer class="footer"><div class="footer-brand"><img src="logo.jpg" alt="SURE BLISS logo"><div><b>BLISS ATELIER</b><small>BY SURE BLISS</small></div></div><p>Tailoring bliss into every outfit.</p><div class="footer-links"><a href="#home">Top ↑</a><a href="https://www.tiktok.com/@sureblissfashion" target="_blank" rel="noopener">TikTok</a><a href="mailto:ayomideadam181@gmail.com">Email</a></div><small>© 2026 BLISS ATELIER • BY SURE BLISS</small></footer>
 
-  <p>Tailoring bliss into every outfit.</p>
-
-  <div class="footer-links">
-    <a href="https://www.tiktok.com/@sureblissfashion" target="_blank" rel="noopener">TikTok</a>
-    <a href="mailto:ayomideadam181@gmail.com">Email</a>
-    <a href="https://whatsapp.com/dl/" target="_blank" rel="noopener">WhatsApp</a>
-  </div>
-
-  <small>© 2026 BLISS ATELIER • BY SURE BLISS</small>
-</footer>
-
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)"><button class="close" onclick="closeLightbox()">×</button><img id="lightboxImage" src="" alt=""><p id="lightboxCaption"></p></div>
 <script>
-function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("open");
-}
-function closeMenu() {
-  document.getElementById("navLinks").classList.remove("open");
-}
+const images=["look-1.jpg","look-2.jpg","look-3.jpg","look-4.jpg","look-5.jpg","look-6.jpg","look-7.jpg","look-8.jpg"];
+const captions=["Classic White","Signature Detail","Modern Green","Brown Stripe","Heritage Cream","Embroidered Brown","Soft Peach","Timeless White"];
+function toggleMenu(){document.getElementById("navLinks").classList.toggle("open")}
+function closeMenu(){document.getElementById("navLinks").classList.remove("open")}
+function openLightbox(i){document.getElementById("lightboxImage").src=images[i];document.getElementById("lightboxImage").alt=captions[i];document.getElementById("lightboxCaption").textContent=captions[i];document.getElementById("lightbox").classList.add("show")}
+function closeLightbox(e){if(!e||e.target.id==="lightbox"||e.target.className==="close")document.getElementById("lightbox").classList.remove("show")}
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 </script>
-
 </body>
 </html>
